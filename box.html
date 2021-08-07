@@ -1,63 +1,677 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #333;
-            color: #fff;
-            margin: 0;
-        }
+    <!DOCTYPE html>
+<html lang="en">
 
-        header{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100vph;
-           
-            
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="app.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+    rel="stylesheet" type="text/css" />
 
-        header:before {
-            content: '';
-            background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVhcm5pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')
-             no-repeat center center/cover;
-             opacity: 0.4;
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             z-index: -1;
-        }
-        header > h1{
-            font-size: 4rem;
-            margin: 1rem;
-        }
-    </style>
-    <body>
-       <header>
-           <h1>
-               Hello world
-           </h1>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum totam atque, magnam ipsum repudiandae!</p>
-       </header>
+  <title>Abigael Anyanwu Portfolio</title>
+</head>
 
-<section>
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore at obcaecati blanditiis quisquam! 
-        Dolores aliquid necessitatibus nihil vitae ullam explicabo, cupiditate quae laboriosam minus quia ipsam 
-        officia, mollitia debitis?</p>
-</section>
-        
-    </body>
+<body>
+  <!--nav section-->
+  <nav class="topnav">
+    <div class="brand-title"><a class="active" href="#home">Ornan</a></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
+    <div class="navbar-links">
+      <ul>
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#moments">Tiidelab Moments</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+  </nav>
+
+  <div id="showcase">
+    <div class="container">
+      <div class="showcase-content">
+        <span class="info">
+          Hello, I'm <span class="highlight">Abigael chidimma Anyanwu</span>.
+          <br />
+          I am a Front-end web developer.</span>
+        <br> <button class="btn">View my work</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!--about me section-->
+
+  <div class="cont">
+    <a id="about">About</a>
+    <div>
+      <p>I design and develop experiences that makes people's life simple</p>
+    </div>
+  </div>
+  <div>
+
+    <section>
+      <div class="about-container">
+        <div class="left"></div>
+        <div class="right">
+          <div class="right-content">
+            <h1>Abigael Anyanwu</h1>
+            <p>I am a frontend web developer, UI/UX designer and Fashionpreneur, a fellow at
+              <a class="tiidelab" href="https://tiidelab.com" target="_blank">TIIDELAB</a>
+              in Nigeria.
+              I have a strong passion for Technology, designs, Research and Illustrations
+              Let's create amazing things</p>
+            <a href="#contact" class="bt">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!--skills seection-->
+      <div class="flex_child">
+
+        <div class="flex-container">
+          <div class="flex-child">
+            <h2>SkillsS</h2>
+          </div>
+
+          <div class="flex-child">
+            <img src="./img/css.png" alt="" style="border-radius: 50%; width: 75px;">
+            <span class="tag">CSS</span>
+          </div>
+
+          <div class="flex-child">
+            <img src="./img/html-5.png" alt="" style="border-radius: 50%; width: 75px;">
+            <span class="tag">HTML</span>
+          </div>
+
+          <div class="flex-child">
+            <img src="./img/javascript.png" alt="" style="border-radius: 50%; width: 75px;">
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <div class="flex-child">
+            <img src="./img/graphic-design.png" alt="" style="border-radius: 50%; width: 75px;">
+            <span class="tag">UI/UX</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </div>
+  <!--Fun moments masonry-->
+  <div class="content">
+    <a id="moments">TIIDELAB FUN MOMENTS</a>
+    <hr>
+  </div>
+
+  <div class="grid-wrapper">
+    <div>
+      <img src="./img/a.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/c.jpg" alt="" />
+    </div>
+    <div class="tall">
+      <img src="./img/a.jpg" alt="">
+    </div>
+    <div class="wide">
+      <img src="./img/af.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/ab.jpg" alt="" />
+    </div>
+    <div class="tall">
+      <img src="./img/ac.jpg" alt="" />
+    </div>
+    <div class="big">
+      <img src="./img/ah.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/ag.jpg" alt="" />
+    </div>
+    <div class="wide">
+      <img src="./img/a.jpg" alt="" />
+    </div>
+    <div class="big">
+      <img src="./img/ed4dd870-da5b-48e5-aa4a-a0d10fb7fe22.jpg" alt="" />
+    </div>
+    <div class="tall">
+      <img src="./img/c.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/f.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/af.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/ai.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/ah.jpg" alt="" />
+    </div>
+    <div class="wide">
+      <img src="./img/e.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/ah.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/d.jpg" alt="" />
+    </div>
+    <div class="wide">
+      <img src="./img/ai.jpg" alt="" />
+    </div>
+    <div>
+      <img src="./img/af.jpg" alt="" />
+    </div>
+    <div class="wide">
+      <img src="./img/abbby.jpg" alt="" />
+    </div>
+
+
+  </div>
+
+
+
+  <div class="form-container">
+    <div class="content">
+      <a id="contact">CONTACT</a>
+      <hr>
+      <p>Have a question or want to work together?</p>
+      <div>
+
+        <div class="form-section">
+          <form action="#">
+            <input type="text" name="fname" placeholder="Your name">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="message" id="subject" placeholder="Write something...."></textarea>
+            <input type="submit" name="contact-btn" value="Submit" class="contact-btn">
+          </form>
+
+          <div class="flex-socials">
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <!--<div class="footer">
+    <div class="footer-heading footer-1">
+      <h2>About us</h2>
+      <a href="#">Blog</a>
+      <a href="#">Skills</a>
+      <a href="#">Works</a>
+    </div>
+
+    <div class="footer-heading footer-2">
+      <h2>Contact </h2>
+      <a href="#">Blog</a>
+      <a href="#">Skills</a>
+      <a href="#">Works</a>
+    </div>
+
+    <div class="footer-heading footer-3">
+      <h2>Social</h2>
+      <a href="#">github</a>
+      <a href="#">Linked In</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>-->
+      </footer>
+
+      <script src="app.js"></script>
+
+
+</body>
+
+
+<!-- styles -->
+
+@media screen and (max-width: 800px) {
+    .form-container{
+    width: 100%; }
+  }
+
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #000;
+    position: fixed;
+    width:100%;
+    z-index: 1; 
+}
+
+.brand-title, .active {
+    font-size: 2rem;
+    margin: .5rem;
+    text-decoration: none;
+    color: #13b390;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand-title, .active:hover{
+    display: block;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background: #13b390;
+}
+
+
+/*  */
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background: #13b390;
+    border-radius: 10px;
+}
+
+
+/*  */
+@media screen and (max-width:600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        background: #000;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        background: #13b390;
+    }
+
+}
+.topnav {
+    background-color: rgba(0, 0, 0, 0.932);
+    overflow: hidden;
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+}
+#showcase:before {
+    content: '';
+    background: url('./img/bg.jpg') no-repeat
+    center center/cover;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+ 
+.btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #13b390;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+.info {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+}
+
+.highlight{
+    color: #13b390;
+    
+}
+#about{
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.cont {
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.tiidelab, a:hover{
+    color: #13b390;
+    text-decoration: none;
+
+}
+/*about section*/
+.about-container {
+    background-color: red;
+}
+
+
+/*skills section */
+.flex_container {
+    display: flex;
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.flex_child {
+    width: 45%;
+    float: left;
+    padding: 20px;
+    height: 400px;
+}
+.details{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}  
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-top: 5px;
+    padding-bottom: 1.5px;
+} 
+
+.tag {
+    float: right;
+    text-align: center;
+    padding: 0px 50px 0px 0px;
+}
+*/
+/*massonry section*/
+#moments{
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.gird-wrapper{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: linear-gradient(45deg, #190f2c, #200b30);
+	padding: 15px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    margin: 20px;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+/*for section*/
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vph;
+    margin-bottom: 80px;
+}
+
+.form-container{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: linear-gradient(45deg, #022517, #0f2c21);
+    padding: 15px;
+    height: 500px;
+}
+#contact{
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+hr{
+    width: 150px;
+    
+}
+
+p{
+    color: #13b390;  
+}
+
+
+  .form-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: black;
+    
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000;
+  }
+
+  .form-section input{
+      min-width: 300px;
+      display: block;
+      margin: 20px;
+      padding: 10px 5px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 5px;
+      border-width: 0 0 2px 0;
+      border-color: #333;
+      outline: none;
+      transition: border-color 0.2s;
+  }
+  .form-section textarea{
+    min-width: 300px;
+    display: block;
+    margin: 20px;
+    padding: 15px 5px 50px 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    border-width: 0 0 2px 0;
+    border-color: #333;
+    outline: none;
+    transition: border-color 0.5s;
+  }
+
+  .form-section input:focus{
+      border-color: #13b390;
+  }
+  .form-section textarea:focus{
+    border-color: #13b390;
+}
+.form-section .contact-btn{
+      min-width: 100px;
+      padding: 12px 5px;
+      border-width: 0;
+      font-size: 18px;
+      font-weight: 400;
+      background-color: #7ed6ba;
+      color: #000;
+      outline: none;
+      transition: background-color 0.2;
+  }
+
+  .form-section .contact-btn:hover {
+      background-color: #13b390;
+  }
+
+
+  .fa {
+      
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    display: flex;
+  color: white;
+}
+
+.fa-linkedin {
+    display: flex;
+  color: white;
+}
+.fa-google {
+    
+    color: white;
+  }
+  .fa-twitter {
+    color: white;
+  }
+  .fa-instagram {
+    color: white;
+  }
+
+  footer{
+      background-color: blue;
+  }
+
 </html>
